@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><title>{{q.quote_no}}</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main><h1>🕯️ Quote {{q.quote_no}}</h1>
+<div class="card">Buyer: <b>{{q.buyer}}</b> · Ref: {{q.reference or '-'}} · Source: <b>{{q.source_format|upper}}</b> · Extractor: {{q.engine}}</div>
+<div class="card"><table><tr><th>#</th><th>Requested</th><th>Matched SKU</th><th>Qty</th><th>USD/unit</th><th>Amount</th><th>Conf.</th><th>Note</th></tr>
+{% for l in q.lines %}<tr><td>{{l.line}}</td><td>{{l.requested}}</td><td>{{l.sku or '—'}} {{l.product}}</td><td>{{l.quantity}} {{l.unit}}</td>
+<td>{{'%.3f'|format(l.unit_price)}}</td><td>{{'{:,.2f}'.format(l.amount)}}</td><td class="{{'ok' if l.confidence>=0.6 else 'low'}}">{{l.confidence}}</td><td>{{l.note}}</td></tr>{% endfor %}
+<tr><th colspan="5">TOTAL</th><th>USD {{'{:,.2f}'.format(q.total)}}</th><th colspan="2"></th></tr></table></div>
+<a class="btn" href="/quote/{{q.id}}/pdf">⬇ Quotation PDF</a>
+<a class="btn" href="/quote/{{q.id}}/reply">⬇ Reply in original format ({{q.source_format}})</a> <a class="btn" href="/">← Another RFQ</a>
+{% if reply_text %}<div class="card"><pre>{{reply_text}}</pre></div>{% endif %}</main></body></html>

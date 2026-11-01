@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Update catalog docs",
+  "description": "When the product catalog CSV changes, refresh docs/catalog.md and check matcher tests",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["data/catalog.csv"] },
+  "then": { "type": "askAgent", "prompt": "data/catalog.csv changed. Regenerate docs/catalog.md (table of SKU, name, category, unit, MOQ, price; note prices are EXAMPLE data), then run `pytest -q tests` and report any matcher regressions." }
+}

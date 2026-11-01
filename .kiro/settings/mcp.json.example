@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "fetch": { "command": "uvx", "args": ["mcp-server-fetch"], "disabled": false, "autoApprove": [] },
+    "aws-docs": { "command": "uvx", "args": ["awslabs.aws-documentation-mcp-server@latest"], "env": { "FASTMCP_LOG_LEVEL": "ERROR" }, "disabled": true },
+    "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "./samples", "./data"], "disabled": false }
+  }
+}

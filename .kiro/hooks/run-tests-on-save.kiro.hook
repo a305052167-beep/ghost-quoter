@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "name": "Run tests on save",
+  "description": "Run pytest whenever a Python file in app/ or tests/ is saved",
+  "version": "1",
+  "when": { "type": "fileEdited", "patterns": ["app/**/*.py", "tests/**/*.py"] },
+  "then": { "type": "askAgent", "prompt": "Run `pytest -q`. If anything fails, explain the failure and propose a minimal fix consistent with .kiro/steering." }
+}

@@ -1,0 +1,19 @@
+From: Northwind Cabinetry LLC (FICTIONAL)
+To: sales@topcent.example
+Subject: RFQ NW-2026-1031 cabinet hardware
+Date: Fri, 30 Oct 2026
+
+Hello,
+
+Please quote FOB Guangzhou for the following:
+
+1. 35mm soft close hinge full overlay - 5,000 pcs
+2. 18" ball bearing drawer slide 45mm x 1200 pairs
+3. T-bar handle 128mm stainless: 3000 pcs
+4. 2000 pcs matte black round knob 30mm
+5. Gas strut 100N - 800 pcs
+6. Pumpkin-shaped door knocker - 50 pcs
+
+RFQ No: NW-2026-1031
+Thanks,
+Jane Doe, Purchasing

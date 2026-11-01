@@ -1,0 +1,1 @@
+#KiroweenHackathon26 👻 Meet Ghost Quoter (幽灵报价员): fax, plain-text email & EDI 840 RFQs in → matched hardware quote PDF out, replied in the SAME format (fax / email / EDI 843). Resurrecting legacy B2B channels for a Guangzhou hinge & drawer-slide exporter. Built spec-first with @kirodotdev 🎃 #Kiro #Resurrection
